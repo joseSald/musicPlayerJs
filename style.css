@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+.container {
+    width:100%;
+    height:100vh;
+    background:linear-gradient(250deg, #333,#3f2e2e,#333,#3f2e2e,#333,#3f2e2e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+.music-player {
+    background:#e5d7f5;
+    width:400px;
+    padding:25px 35px;
+    text-align:center;
+    border-radius:5px 7px 5px 7px;
+    box-shadow: 12px 12px 10px rgba(249, 6, 6, 0.182);
+    
+}
+.music-player:hover {
+    border-radius: 7px;
+    box-shadow: 11px 11px 15px rgba(249, 6, 6, 0.153);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+ nav .circle {
+     border-radius: 50%;
+     width:40px;
+     height:40px;
+     line-height: 40px;
+     background: #fff;
+     color:#f41c88;
+     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    }
+ nav .circle:hover {
+    width:40.5px;
+    height:40.5px;
+    color:rgb(255, 112, 102);
+    box-shadow: 0 4px 9px rgba(150, 94, 94, 0.876);
+    cursor: pointer;
+}
+ .song-img{
+    width:225px;
+    border-radius: 50%;
+    border: 8px solid #ffffff97;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+ }
+ .music-player h1 {
+     font-size: 20px;
+     font-weight: 400;
+     color: #333;
+     margin-top: 20px;
+    }
+ .music-player p {
+    font-size: 14px;
+    color: #333;
+
+ }
+ #progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #9f7cf6;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:40px 0;
+ }
+ #progress::-webkit-slider-thumb{
+     -webkit-appearance: none;
+     background: #f677b6;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border:3px solid #a26c6c;
+     box-shadow: 0 5px 5px rgba(255,26,26,0.22);
+    }
+    #progress::-webkit-slider-thumb:hover{
+        background: #b2025a;
+    border:1px solid #150101;
+
+}
+.controls {
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}
+.controls div {
+    width:60px;
+    height:60px;
+    margin:20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:#f373b3;
+    box-shadow: 0 10px 15px rgba(255, 26, 26, 0.304);
+    cursor: pointer;
+}
+.controls div:hover {
+    box-shadow: 0 8px 13px rgba(250, 19, 19, 0.304);
+    
+}
+.controls div:nth-child(2) {
+    transform:scale(1.5);
+    background: #f5319356;
+    color:#fff;
+    border:0.5px solid #1501017b;
+    
+}
+.controls div:hover {
+    color: #1051c1;
+}

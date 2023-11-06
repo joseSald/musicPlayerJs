@@ -10,11 +10,11 @@ song.onloadedmetadata = function () {
 function playPause() {
   if (controlIconPlay.classList.contains('fa-pause')) {
     song.pause();
-    controlIconPlay.classList.remove('fa-pause');
+    controlIconPlay.classList.remove('fa-pause', 'spin');
     controlIconPlay.classList.add('fa-play');
   } else {
     song.play();
-    controlIconPlay.classList.add('fa-pause');
+    controlIconPlay.classList.add('fa-pause', 'spin');
     controlIconPlay.classList.remove('fa-play');
   }
 }
@@ -22,7 +22,7 @@ function playPause() {
 if (song.play()) {
   setInterval(() => {
     progress.value = song.currentTime;
-  }, 500);
+  }, 400);
 }
 
 progress.onchange = function () {

@@ -1,17 +1,22 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing:border-box;
 }
 .container {
     width:100%;
     height:100vh;
+    /* background-image: url(./media/imgs/Specials_uk_front.jpg); */
     background:linear-gradient(250deg, #333,#3f2e2e,#333,#3f2e2e,#333,#3f2e2e);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap:wrap ;
+}
+.container:hover {
+    background:linear-gradient(245deg, #333,#3f2e2e,#333,#3f2e2e,#333,#3f2e2e);
 }
 .music-player {
     background:#e5d7f5;
@@ -48,27 +53,27 @@ nav {
     cursor: pointer;
 }
  .song-img{
-    width:225px;
-    border-radius: 50%;
-    border: 8px solid #ffffff97;
+    width:245px;
+    /* border-radius: 50%; */
+    border: 5px solid #ffffff97;
     box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
  }
  .music-player h1 {
      font-size: 20px;
      font-weight: 400;
      color: #333;
-     margin-top: 20px;
+     margin-top: 25px;
     }
- .music-player p {
+    .music-player p {
+     margin-top: 10px;
     font-size: 14px;
     color: #333;
-
  }
  #progress {
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
-    background: #9f7cf6;
+    background: #aa8bf7;
     border-radius: 4px;
     cursor: pointer;
     margin:40px 0;
@@ -101,7 +106,7 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color:#f373b3;
+    color:#cf689c;
     box-shadow: 0 10px 15px rgba(255, 26, 26, 0.304);
     cursor: pointer;
 }
@@ -114,7 +119,21 @@ nav {
     background: #f5319356;
     color:#fff;
     border:0.5px solid #1501017b;
-    
+    box-shadow: 0 5px 15px rgba(255, 26, 26, 0.304);
+}
+.spin {
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 .controls div:hover {
     color: #1051c1;

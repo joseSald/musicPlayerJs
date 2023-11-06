@@ -16,10 +16,10 @@
     flex-wrap:wrap ;
 }
 .container:hover {
-    background:linear-gradient(245deg, #333,#3f2e2e,#333,#3f2e2e,#333,#3f2e2e);
+    background:linear-gradient(300deg, #333,#3f2e2e,#333,#3f2e2e,#333,#3f2e2e);
 }
 .music-player {
-    background:#e5d7f5;
+    background:#f4f3f7;
     width:400px;
     padding:25px 35px;
     text-align:center;
@@ -28,6 +28,7 @@
     
 }
 .music-player:hover {
+    background:#e2d0f7;
     border-radius: 7px;
     box-shadow: 11px 11px 15px rgba(249, 6, 6, 0.153);
 }
